@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Stylet" Version="1.3.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyFirstStyletProject.Shared\MyFirstStyletProject.Shared.csproj" />
+    <ProjectReference Include="..\MyStyletExamples.DataAccess\MyStyletExamples.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

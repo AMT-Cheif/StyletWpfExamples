@@ -10,6 +10,33 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
+        <Style x:Key="CustomButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Background="Blue"
+                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                            <ContentPresenter Content="{TemplateBinding Content}" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" Value="0.4"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
         <DataTemplate x:Key="StaffDataTemplate" DataType="{x:Type models:Employee}">
             <Border Margin="10" Cursor="Hand" BorderThickness="1"
                     Background="#FF16394F" BorderBrush="#FF3F5666"
@@ -54,9 +81,20 @@
             </Border>
         </DataTemplate>
     </UserControl.Resources>
+    
     <ScrollViewer VerticalScrollBarVisibility="Auto">
+        
         <Grid ScrollViewer.CanContentScroll="True">
-            <ListBox HorizontalAlignment="Center" VerticalAlignment="Center"
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Style="{StaticResource CustomButtonStyle}" Cursor="Hand"
+                VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20"
+                Foreground="White"
+                Command="{s:Action RefreshStaff}" Content="Refresh">
+            </Button>
+            <ListBox Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"
                  
                  ItemTemplate="{StaticResource StaffDataTemplate}"
                  ItemsSource="{Binding Employees}">

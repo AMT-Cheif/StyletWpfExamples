@@ -35,5 +35,10 @@ namespace MyFirstStyletProject.ViewModels
             var staffDetailsVM = new StaffDetailsViewModel { Employee = employee };
             ((ShellViewModel)this.Parent).ActivateItem(staffDetailsVM);
         }
+
+        public void RefreshStaff()
+        {
+            Employees = _staffData.GetEmployees();
+        }
     }
 }

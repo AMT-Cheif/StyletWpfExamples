@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicNavigation", "BasicNav
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StyletBasicNavigation", "..\StyletBasicNavigation\StyletBasicNavigation.csproj", "{F3F7DC59-238B-42D0-BC91-BDACECB4C2C0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StyletBasicValidation", "StyletBasicValidation", "{D09B63C8-7726-4864-99BC-9B4EC78574E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StyletFirstValidation", "..\StyletFirstValidation\StyletFirstValidation.csproj", "{489F6CD9-E492-4AC8-ACE7-B9B9513C1ED1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{F3F7DC59-238B-42D0-BC91-BDACECB4C2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3F7DC59-238B-42D0-BC91-BDACECB4C2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3F7DC59-238B-42D0-BC91-BDACECB4C2C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489F6CD9-E492-4AC8-ACE7-B9B9513C1ED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489F6CD9-E492-4AC8-ACE7-B9B9513C1ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489F6CD9-E492-4AC8-ACE7-B9B9513C1ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489F6CD9-E492-4AC8-ACE7-B9B9513C1ED1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +61,7 @@ Global
 		{D778EC71-2747-4605-9DEE-FD2E399CB772} = {B0182D30-4833-48A2-9236-7390C9DE4323}
 		{F33DF940-E1FF-477B-81EC-28719EEF6FAE} = {B0182D30-4833-48A2-9236-7390C9DE4323}
 		{F3F7DC59-238B-42D0-BC91-BDACECB4C2C0} = {093E93E7-1E20-48DD-90EC-186C134ED377}
+		{489F6CD9-E492-4AC8-ACE7-B9B9513C1ED1} = {D09B63C8-7726-4864-99BC-9B4EC78574E0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {81976B23-619E-40C9-AD7F-F6C825119E38}

@@ -37,7 +37,7 @@
                 <ListBox ItemsSource="{Binding ViewsCollection}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <TextBox Text="{Binding Path=.}" Background="{Binding Converter={StaticResource StringToBrushConverter}}" Foreground="White" />
+                            <TextBlock Text="{Binding Path=.}" Background="{Binding Converter={StaticResource StringToBrushConverter}}" Foreground="White" />
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>

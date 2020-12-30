@@ -5,11 +5,17 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstStyletProject", "MyFirstStyletProject\MyFirstStyletProject.csproj", "{53555521-7461-4A7D-8144-6984CC6D2F4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstStyletProject.Shared", "MyFirstStyletProject.Shared\MyFirstStyletProject.Shared.csproj", "{1DFED542-68F0-49D5-83F5-49E383155903}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstStyletProject.Shared", "MyFirstStyletProject.Shared\MyFirstStyletProject.Shared.csproj", "{1DFED542-68F0-49D5-83F5-49E383155903}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstStyletProject.IoC", "MyFirstStyletProject.IoC\MyFirstStyletProject.IoC.csproj", "{D778EC71-2747-4605-9DEE-FD2E399CB772}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstStyletProject.IoC", "MyFirstStyletProject.IoC\MyFirstStyletProject.IoC.csproj", "{D778EC71-2747-4605-9DEE-FD2E399CB772}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStyletExamples.DataAccess", "MyStyletExamples.DataAccess\MyStyletExamples.DataAccess.csproj", "{F33DF940-E1FF-477B-81EC-28719EEF6FAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyStyletExamples.DataAccess", "MyStyletExamples.DataAccess\MyStyletExamples.DataAccess.csproj", "{F33DF940-E1FF-477B-81EC-28719EEF6FAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "First", "First", "{B0182D30-4833-48A2-9236-7390C9DE4323}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicNavigation", "BasicNavigation", "{093E93E7-1E20-48DD-90EC-186C134ED377}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StyletBasicNavigation", "..\StyletBasicNavigation\StyletBasicNavigation.csproj", "{F3F7DC59-238B-42D0-BC91-BDACECB4C2C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,20 @@ Global
 		{F33DF940-E1FF-477B-81EC-28719EEF6FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F33DF940-E1FF-477B-81EC-28719EEF6FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F33DF940-E1FF-477B-81EC-28719EEF6FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3F7DC59-238B-42D0-BC91-BDACECB4C2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3F7DC59-238B-42D0-BC91-BDACECB4C2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3F7DC59-238B-42D0-BC91-BDACECB4C2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3F7DC59-238B-42D0-BC91-BDACECB4C2C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53555521-7461-4A7D-8144-6984CC6D2F4C} = {B0182D30-4833-48A2-9236-7390C9DE4323}
+		{1DFED542-68F0-49D5-83F5-49E383155903} = {B0182D30-4833-48A2-9236-7390C9DE4323}
+		{D778EC71-2747-4605-9DEE-FD2E399CB772} = {B0182D30-4833-48A2-9236-7390C9DE4323}
+		{F33DF940-E1FF-477B-81EC-28719EEF6FAE} = {B0182D30-4833-48A2-9236-7390C9DE4323}
+		{F3F7DC59-238B-42D0-BC91-BDACECB4C2C0} = {093E93E7-1E20-48DD-90EC-186C134ED377}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {81976B23-619E-40C9-AD7F-F6C825119E38}
